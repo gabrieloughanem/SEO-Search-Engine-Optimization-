@@ -70,3 +70,15 @@ Points clés :
 - `404` (page non trouvée) est normal lorsqu'une ressource n'existe plus. Lorsqu'une page a été définitivement supprimée sans équivalent pertinent, un `404` peut être préférable à une redirection artificielle vers une autre page.
 - Les chaînes de redirections (plusieurs redirections successives avant d'atteindre la destination finale) ajoutent des étapes inutiles et peuvent ralentir l'exploration. Il est préférable de rediriger directement l'ancienne URL vers la destination finale.
 - Un code `200` renvoyé pour une page qui n'existe pas réellement ou dont le contenu est absent peut produire un « soft 404 ». Les moteurs peuvent alors considérer la page comme inexistante malgré son statut HTTP `200`.
+
+- ## Balises HTML et structure du document
+
+Certaines balises HTML aident les moteurs de recherche à comprendre le contenu et la structure d'une page, au-delà de son seul texte visible.
+
+Points clés :
+- La balise `<title>` est un signal important pour comprendre le sujet de la page. Elle est aussi généralement utilisée comme titre cliquable dans les résultats de recherche, bien que Google puisse la reformuler s'il estime qu'une autre formulation est plus pertinente.
+- La `meta description` n'a pas d'effet direct connu sur le classement, mais peut influencer l'extrait affiché sous le titre dans les résultats. Google peut également générer cet extrait à partir du contenu de la page s'il estime qu'il est plus pertinent.
+- La hiérarchie des titres (`<h1>` à `<h6>`) contribue à structurer le contenu de façon logique. Utiliser un `<h1>` principal par page reste une pratique courante, mais Google n'impose pas de règle stricte sur le nombre de balises `<h1>`.
+- L'attribut `alt` d'une image fournit une description textuelle utile aux technologies d'assistance et aide également les moteurs à comprendre le contenu de l'image, notamment pour la recherche d'images.
+- L'attribut `lang` (par exemple `<html lang="fr">`) indique la langue du document et améliore notamment son interprétation par les technologies d'assistance. Il fournit également un signal sur la langue du contenu, mais ne constitue pas à lui seul un mécanisme de ciblage international.
+- Le contenu masqué ou rendu difficilement accessible à l'utilisateur doit être utilisé avec cohérence. Cacher du contenu dans le seul but de manipuler les moteurs de recherche peut être considéré comme une pratique abusive, tandis que certains contenus masqués pour des raisons d'interface ou d'accessibilité restent parfaitement légitimes.
