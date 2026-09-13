@@ -71,4 +71,13 @@ Points clés :
 - Maintenir une identité et des informations d'entité cohérentes — nom, activité, coordonnées et autres informations pertinentes — sur les différents supports où l'entité est présente, afin de réduire les risques de confusion ou de contradiction entre les sources.
 - Mettre à jour le contenu lorsque les informations qu'il contient évoluent, plutôt que de laisser des pages obsolètes en ligne. Une date de publication ou de mise à jour correctement renseignée peut également aider à contextualiser la fraîcheur d'une information, sans garantir un meilleur classement ou une meilleure visibilité.
 
-- 
+- ## Limites et incertitudes
+
+Une grande partie de ce qui est écrit sur la visibilité dans les systèmes d'IA repose sur des observations, des tests empiriques et des hypothèses formulées par la communauté SEO, plutôt que sur une documentation officielle exhaustive de la part des fournisseurs de ces systèmes.
+
+Points clés :
+- Le fonctionnement interne des systèmes d'IA générative — notamment la manière dont une source est sélectionnée, pondérée ou citée plutôt qu'une autre — reste en grande partie propriétaire et n'est pas documenté publiquement dans le détail.
+- Aucune méthode ne garantit qu'un contenu sera utilisé ou cité dans une réponse générée. Contrairement aux résultats d'un moteur de recherche, où le classement d'une page peut être observé dans un ensemble de résultats donné, un contenu peut simplement ne pas être sélectionné pour une réponse particulière.
+- Les modèles et les systèmes évoluent rapidement, avec des mises à jour fréquentes et parfois peu détaillées publiquement. Une observation réalisée à un instant donné peut donc ne plus être valable quelques mois plus tard.
+- Il convient de distinguer explicitement ce qui relève de la documentation officielle publiée par un fournisseur — Google, OpenAI, Perplexity, etc. — de ce qui relève d'observations empiriques, de tests limités ou non reproduits à grande échelle, ou d'hypothèses formulées dans l'industrie du référencement.
+- Le vocabulaire employé autour de ces sujets — GEO, AEO et d'autres termes susceptibles d'apparaître — évolue lui-même rapidement et ne fait pas toujours l'objet d'un consensus de définition, y compris au sein de la communauté qui les utilise.
