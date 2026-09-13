@@ -35,3 +35,15 @@ Points clés :
 - Les modèles génératifs peuvent produire des erreurs factuelles ou des informations inexistantes, parfois appelées « hallucinations ». Une supervision humaine et une vérification des informations importantes restent donc nécessaires avant publication, notamment pour les sujets techniques, scientifiques, juridiques ou financiers.
 - La production automatisée de nombreuses pages à partir de modèles, de prompts ou de structures similaires peut également conduire à des contenus répétitifs ou peu différenciés. Le problème ne vient pas nécessairement de l'automatisation elle-même, mais de l'absence de valeur ajoutée réelle.
 - Les principes de qualité applicables au contenu restent valables quelle que soit sa méthode de production : expérience, expertise, autorité, fiabilité, exactitude et adéquation avec l'intention de l'utilisateur doivent être prises en compte lors de la conception du contenu.
+
+- ## Visibilité dans les systèmes d'IA
+
+Au-delà du classement dans les résultats de recherche traditionnels, un contenu peut aussi être repris, résumé ou cité par un système d'intelligence artificielle. Cette visibilité dépend de plusieurs facteurs, dont certains recoupent les fondamentaux du SEO technique et d'autres restent propres à chaque système.
+
+Points clés :
+- Un contenu doit d'abord être accessible et exploitable techniquement — pages non bloquées à l'exploration, contenu présent dans le HTML ou correctement rendu, temps de réponse raisonnable — pour pouvoir être découvert et éventuellement utilisé par un système d'IA.
+- Certains fournisseurs de systèmes d'IA opèrent leurs propres robots d'exploration, distincts de ceux des moteurs de recherche traditionnels. Un site peut choisir de les autoriser ou de les bloquer indépendamment via `robots.txt`, avec des conséquences différentes selon le système concerné.
+- Les données structurées et une organisation claire du contenu — titres, structure logique, informations factuelles bien délimitées — peuvent faciliter l'extraction et la compréhension du contenu par un système automatisé, sans garantir pour autant sa citation.
+- La réputation et l'autorité perçue d'une source sont régulièrement évoquées comme des facteurs pouvant contribuer à la confiance accordée à un contenu. Toutefois, les mécanismes précis de sélection et de pondération de ces signaux ne sont pas publiquement détaillés par la plupart des systèmes.
+- La cohérence des informations concernant une même entité — nom, activité, coordonnées et autres informations publiées sur différents sites — peut faciliter leur rapprochement et réduire les risques d'informations contradictoires.
+- Cette visibilité reste difficile à mesurer de façon standardisée : contrairement au classement dans un moteur de recherche, il n'existe pas encore de mesure universelle permettant d'observer la fréquence ou la manière dont un contenu est cité par les différents systèmes génératifs.
