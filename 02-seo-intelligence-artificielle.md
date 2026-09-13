@@ -23,3 +23,15 @@ Ces termes sont récents et ne disposent pas d'une définition technique univers
 Dans la pratique, plusieurs fondamentaux restent communs : contenu accessible, informations fiables, structure claire et architecture cohérente. Ces éléments peuvent faciliter la compréhension et l'exploitation d'un contenu, sans pour autant garantir sa sélection par un système d'IA.
 
 L'apparition d'un contenu dans une réponse générée dépend toutefois de mécanismes propres à chaque système. Il n'existe pas de méthode universelle garantissant qu'une page sera sélectionnée ou citée par une IA.
+
+## Contenu généré par intelligence artificielle
+
+L'utilisation d'outils d'intelligence artificielle pour produire du contenu — rédaction assistée, génération de textes, traduction, résumé, etc. — n'est pas en soi considérée comme une pratique problématique par les moteurs de recherche. L'évaluation porte principalement sur la qualité, la fiabilité et l'utilité du contenu final pour l'utilisateur, indépendamment de la manière dont il a été produit.
+
+Points clés :
+- Google indique se concentrer sur la qualité du contenu plutôt que sur son mode de production. Un contenu généré ou assisté par IA peut être indexé et classé s'il apporte une réelle valeur aux utilisateurs et respecte les règles applicables.
+- Les moteurs cherchent notamment à limiter la production de contenu à grande échelle dans le but de manipuler les résultats de recherche. Ce type de pratique peut utiliser l'IA, des systèmes automatisés, du contenu copié ou d'autres méthodes de production. Le recours à une IA n'est donc pas, à lui seul, le critère déterminant.
+- Un contenu généré par IA sans relecture, vérification factuelle ou valeur ajoutée peut être peu utile, au même titre qu'un contenu humain de faible qualité.
+- Les modèles génératifs peuvent produire des erreurs factuelles ou des informations inexistantes, parfois appelées « hallucinations ». Une supervision humaine et une vérification des informations importantes restent donc nécessaires avant publication, notamment pour les sujets techniques, scientifiques, juridiques ou financiers.
+- La production automatisée de nombreuses pages à partir de modèles, de prompts ou de structures similaires peut également conduire à des contenus répétitifs ou peu différenciés. Le problème ne vient pas nécessairement de l'automatisation elle-même, mais de l'absence de valeur ajoutée réelle.
+- Les principes de qualité applicables au contenu restent valables quelle que soit sa méthode de production : expérience, expertise, autorité, fiabilité, exactitude et adéquation avec l'intention de l'utilisateur doivent être prises en compte lors de la conception du contenu.
