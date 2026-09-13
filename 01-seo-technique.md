@@ -18,7 +18,7 @@ L'indexation est l'étape où le moteur décide d'ajouter (ou non) une page expl
 Points clés :
 - Une page peut être explicitement exclue de l'index via `noindex`. À l'inverse, `robots.txt` contrôle principalement son exploration et ne garantit pas sa non-indexation : une page bloquée au crawl peut malgré tout apparaître dans les résultats, généralement sans description.
 - La Google Search Console permet de vérifier le statut d'indexation réel d'une page.
-- Un contenu dupliqué ou trop proche d'une autre page du site peut être ignoré à l'indexation, même sans blocage explicite.
+- Un contenu dupliqué ou très similaire à une autre page peut être regroupé avec celle-ci et ne pas être indexé séparément.
 
 ## Robots.txt
 
@@ -46,7 +46,7 @@ La canonicalisation indique à un moteur de recherche quelle URL est la version 
 Points clés :
 - La balise `<link rel="canonical">` est une suggestion, pas une directive absolue : Google peut choisir une autre URL canonique s'il estime avoir de meilleures raisons de le faire.
 - Les cas fréquents de contenu dupliqué : paramètres d'URL (tri, filtres), versions HTTP/HTTPS ou avec/sans `www`, pages accessibles via plusieurs chemins.
-- Une mauvaise canonicalisation peut diluer l'autorité d'une page entre plusieurs URLs au lieu de la concentrer sur une seule.
+- Une mauvaise canonicalisation peut conduire les moteurs à sélectionner une URL différente de celle souhaitée comme version représentative d'un contenu.
 
 ## Architecture et maillage interne
 
@@ -71,7 +71,7 @@ Points clés :
 - Les chaînes de redirections (plusieurs redirections successives avant d'atteindre la destination finale) ajoutent des étapes inutiles et peuvent ralentir l'exploration. Il est préférable de rediriger directement l'ancienne URL vers la destination finale.
 - Un code `200` renvoyé pour une page qui n'existe pas réellement ou dont le contenu est absent peut produire un « soft 404 ». Les moteurs peuvent alors considérer la page comme inexistante malgré son statut HTTP `200`.
 
-- ## Balises HTML et structure du document
+## Balises HTML et structure du document
 
 Certaines balises HTML aident les moteurs de recherche à comprendre le contenu et la structure d'une page, au-delà de son seul texte visible.
 
@@ -83,7 +83,7 @@ Points clés :
 - L'attribut `lang` (par exemple `<html lang="fr">`) indique la langue du document et améliore notamment son interprétation par les technologies d'assistance. Il fournit également un signal sur la langue du contenu, mais ne constitue pas à lui seul un mécanisme de ciblage international.
 - Le contenu masqué ou rendu difficilement accessible à l'utilisateur doit être utilisé avec cohérence. Cacher du contenu dans le seul but de manipuler les moteurs de recherche peut être considéré comme une pratique abusive, tandis que certains contenus masqués pour des raisons d'interface ou d'accessibilité restent parfaitement légitimes.
 
-- ## Pagination et gestion des paramètres d'URL
+## Pagination et gestion des paramètres d'URL
 
 De nombreux sites génèrent des variantes d'une même page via des paramètres d'URL (tri, filtres, suivi de campagne) ou via une pagination (listes de résultats réparties sur plusieurs pages). Ces mécanismes peuvent créer un grand nombre d'URLs proches ou dupliquées s'ils ne sont pas gérés avec attention.
 
@@ -95,7 +95,7 @@ Points clés :
 - `robots.txt` peut limiter l'exploration de certaines variantes d'URL, mais il doit être utilisé avec prudence : bloquer une URL empêche principalement son exploration et ne constitue pas une méthode fiable pour empêcher son indexation.
 - Google Search Console ne propose plus le traitement général des paramètres d'URL qui permettait auparavant de déclarer leur comportement. La gestion doit donc principalement reposer sur l'architecture du site, les liens internes, la canonicalisation et, lorsque c'est pertinent, les règles de crawl.
 
-- ## Internationalisation (hreflang)
+## Internationalisation (hreflang)
 
 Certains sites proposent des versions d'une même page adaptées à différentes langues ou zones géographiques. L'attribut `hreflang` permet d'indiquer aux moteurs de recherche les relations entre ces différentes versions et de signaler quelle version linguistique ou régionale est destinée à quel public.
 
@@ -107,7 +107,7 @@ Points clés :
 - `hreflang` est un signal indiquant une relation entre des pages équivalentes, mais ne garantit pas à lui seul leur classement dans chaque marché. Il doit correspondre à des versions réellement adaptées à chaque langue ou région.
 - Des annotations `hreflang` incohérentes, par exemple lorsqu'une page A référence B sans que B ne référence A, peuvent empêcher Google de reconnaître correctement la relation entre les deux versions.
 
-- ## Performance web / Core Web Vitals
+## Performance web / Core Web Vitals
 
 Les Core Web Vitals sont un ensemble de métriques définies par Google pour mesurer des aspects essentiels de l'expérience utilisateur : performance de chargement, réactivité et stabilité visuelle. Ils constituent un ensemble de signaux utilisés dans l'évaluation de l'expérience de page.
 
@@ -119,7 +119,7 @@ Points clés :
 - Les Core Web Vitals constituent un signal parmi d'autres dans l'évaluation de l'expérience de page. Une bonne performance technique ne compense pas nécessairement un contenu moins pertinent ou moins utile.
 - PageSpeed Insights permet d'obtenir des données de terrain et de laboratoire pour une URL. Le rapport « Signaux Web essentiels » de Google Search Console permet quant à lui de suivre les performances des groupes de pages du site à partir des données disponibles.
 
-- ## Données structurées
+## Données structurées
 
 Les données structurées sont un format de balisage qui permet de décrire explicitement le contenu d'une page dans un vocabulaire standardisé, généralement celui de Schema.org. Elles aident les moteurs de recherche à comprendre la nature et les propriétés d'un contenu (un article, une recette, un produit, un événement...), au-delà de ce que le texte seul permet de déduire.
 
@@ -131,3 +131,23 @@ Points clés :
 - L'outil de test des résultats enrichis permet de vérifier si une page peut être éligible à certains résultats enrichis. Google Search Console propose également des rapports permettant de suivre les données structurées détectées et certaines erreurs sur le site.
 - Des types comme `Organization`, `WebSite` ou `BreadcrumbList` permettent de décrire des entités et la structure du site. Leur présence ne garantit pas un meilleur classement, mais fournit aux moteurs des informations structurées supplémentaires sur le contenu et l'organisation du site.
 
+## Sources
+
+Google Search Central :
+- [Présentation du fonctionnement de la recherche Google](https://developers.google.com/search/docs/fundamentals/how-search-works)
+- [Guide SEO pour les développeurs](https://developers.google.com/search/docs/fundamentals/get-started-developers)
+- [Présentation du fichier robots.txt](https://developers.google.com/search/docs/crawling-indexing/robots/intro)
+- [Bloquer l'indexation avec noindex](https://developers.google.com/search/docs/crawling-indexing/block-indexing)
+- [À propos des sitemaps](https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview)
+- [Consolider les URL en double](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls)
+- [Bonnes pratiques pour les liens](https://developers.google.com/search/docs/crawling-indexing/links-crawlable)
+- [Versions localisées des pages et hreflang](https://developers.google.com/search/docs/specialty/international/localized-versions)
+- [Core Web Vitals et résultats de recherche Google](https://developers.google.com/search/docs/appearance/core-web-vitals)
+- [Données structurées dans la recherche Google](https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data)
+- [Consignes générales relatives aux données structurées](https://developers.google.com/search/docs/appearance/structured-data/sd-policies)
+- [Influencer les titres affichés dans les résultats](https://developers.google.com/search/docs/appearance/title-link)
+- [Utiliser Google Search Console](https://developers.google.com/search/docs/monitor-debug/search-console-start)
+
+Références complémentaires :
+- [Schema.org — Documentation](https://schema.org/docs/documents.html)
+- [RFC 9309 — Robots Exclusion Protocol](https://www.rfc-editor.org/rfc/rfc9309.html)
