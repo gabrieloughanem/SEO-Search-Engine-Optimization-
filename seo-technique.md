@@ -47,3 +47,14 @@ Points clés :
 - La balise `<link rel="canonical">` est une suggestion, pas une directive absolue : Google peut choisir une autre URL canonique s'il estime avoir de meilleures raisons de le faire.
 - Les cas fréquents de contenu dupliqué : paramètres d'URL (tri, filtres), versions HTTP/HTTPS ou avec/sans `www`, pages accessibles via plusieurs chemins.
 - Une mauvaise canonicalisation peut diluer l'autorité d'une page entre plusieurs URLs au lieu de la concentrer sur une seule.
+
+## Architecture et maillage interne
+
+L'architecture d'un site désigne la façon dont ses pages sont organisées et reliées entre elles. Le maillage interne — les liens d'une page vers une autre au sein du même site — en est le mécanisme concret : il facilite la découverte des pages par les crawlers et contribue à la distribution des signaux d'importance entre elles.
+
+Points clés :
+- Une page profonde (accessible seulement après plusieurs clics depuis la page d'accueil) peut être plus difficile à découvrir et reçoit généralement moins de signaux internes qu'une page proche de la racine.
+- Les liens internes doivent utiliser des ancres (le texte cliquable) descriptives : elles aident les moteurs à comprendre le sujet de la page cible, contrairement à des ancres génériques comme « cliquez ici ».
+- Une organisation thématique cohérente, parfois appelée structure en silo, peut aider les moteurs à comprendre les relations entre les pages et les sujets traités sur le site.
+- Les pages orphelines — non liées depuis aucune autre page du site — sont plus difficiles à découvrir par le maillage interne. Un sitemap peut faciliter leur découverte, mais ne remplace pas des liens internes pertinents.
+- Le nombre de liens internes doit rester cohérent avec le contenu et les besoins de navigation. Google ne fixe pas de limite stricte : l'objectif est avant tout de proposer des liens utiles et pertinents aux utilisateurs et aux moteurs.
