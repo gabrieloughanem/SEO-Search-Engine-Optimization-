@@ -107,3 +107,15 @@ Points clés :
 - `hreflang` est un signal indiquant une relation entre des pages équivalentes, mais ne garantit pas à lui seul leur classement dans chaque marché. Il doit correspondre à des versions réellement adaptées à chaque langue ou région.
 - Des annotations `hreflang` incohérentes, par exemple lorsqu'une page A référence B sans que B ne référence A, peuvent empêcher Google de reconnaître correctement la relation entre les deux versions.
 
+- ## Performance web / Core Web Vitals
+
+Les Core Web Vitals sont un ensemble de métriques définies par Google pour mesurer des aspects essentiels de l'expérience utilisateur : performance de chargement, réactivité et stabilité visuelle. Ils constituent un ensemble de signaux utilisés dans l'évaluation de l'expérience de page.
+
+Points clés :
+- LCP (Largest Contentful Paint) mesure le temps nécessaire pour afficher le plus grand élément de contenu visible dans la fenêtre d'affichage. Un LCP inférieur ou égal à 2,5 secondes est considéré comme une bonne performance.
+- INP (Interaction to Next Paint) mesure la réactivité d'une page aux interactions de l'utilisateur sur l'ensemble de sa visite. Il a remplacé le FID (First Input Delay) comme Core Web Vital en mars 2024. Un INP inférieur ou égal à 200 millisecondes est considéré comme une bonne performance.
+- CLS (Cumulative Layout Shift) mesure la stabilité visuelle d'une page en quantifiant les déplacements inattendus de son contenu. Un score inférieur ou égal à 0,1 est considéré comme une bonne performance.
+- Les Core Web Vitals peuvent être mesurés à partir de données réelles d'utilisateurs (« données de terrain »), notamment via le Chrome User Experience Report (CrUX). Les données de terrain et les tests en laboratoire peuvent produire des résultats différents, car ils ne mesurent pas les mêmes conditions d'utilisation.
+- Les Core Web Vitals constituent un signal parmi d'autres dans l'évaluation de l'expérience de page. Une bonne performance technique ne compense pas nécessairement un contenu moins pertinent ou moins utile.
+- PageSpeed Insights permet d'obtenir des données de terrain et de laboratoire pour une URL. Le rapport « Signaux Web essentiels » de Google Search Console permet quant à lui de suivre les performances des groupes de pages du site à partir des données disponibles.
+
