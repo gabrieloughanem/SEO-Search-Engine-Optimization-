@@ -58,3 +58,15 @@ Points clés :
 - Une organisation thématique cohérente, parfois appelée structure en silo, peut aider les moteurs à comprendre les relations entre les pages et les sujets traités sur le site.
 - Les pages orphelines — non liées depuis aucune autre page du site — sont plus difficiles à découvrir par le maillage interne. Un sitemap peut faciliter leur découverte, mais ne remplace pas des liens internes pertinents.
 - Le nombre de liens internes doit rester cohérent avec le contenu et les besoins de navigation. Google ne fixe pas de limite stricte : l'objectif est avant tout de proposer des liens utiles et pertinents aux utilisateurs et aux moteurs.
+
+## Codes HTTP et redirections
+
+Le code de statut HTTP renvoyé par le serveur indique aux navigateurs comme aux moteurs de recherche l'état de la ressource demandée. Une mauvaise gestion de ces codes peut perturber l'exploration et l'indexation d'un site.
+
+Points clés :
+- `200 OK` indique qu'une ressource a été trouvée et peut être correctement récupérée. C'est généralement le code attendu pour une page destinée à être indexée.
+- `301` (redirection permanente) indique que l'URL a été déplacée de manière durable. Il permet aux moteurs de transférer les signaux associés à l'ancienne URL vers la nouvelle et constitue le choix approprié pour une migration ou un changement d'URL permanent.
+- `302` (redirection temporaire) indique que le déplacement est provisoire. Lorsqu'une redirection est réellement temporaire, elle permet aux moteurs de conserver l'ancienne URL comme référence potentielle. Utiliser un `302` pour un déplacement permanent peut ralentir la prise en compte de la nouvelle URL.
+- `404` (page non trouvée) est normal lorsqu'une ressource n'existe plus. Lorsqu'une page a été définitivement supprimée sans équivalent pertinent, un `404` peut être préférable à une redirection artificielle vers une autre page.
+- Les chaînes de redirections (plusieurs redirections successives avant d'atteindre la destination finale) ajoutent des étapes inutiles et peuvent ralentir l'exploration. Il est préférable de rediriger directement l'ancienne URL vers la destination finale.
+- Un code `200` renvoyé pour une page qui n'existe pas réellement ou dont le contenu est absent peut produire un « soft 404 ». Les moteurs peuvent alors considérer la page comme inexistante malgré son statut HTTP `200`.
