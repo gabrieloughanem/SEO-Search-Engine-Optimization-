@@ -1,5 +1,5 @@
 # SEO-Search-Engine-Optimization-
-Notes, recherches et tests autour du SEO.
+Notes, recherches et expérimentations autour du SEO, de l’indexation et des moteurs de recherche.
 
 ## Sujets
 
