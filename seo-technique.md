@@ -119,3 +119,15 @@ Points clés :
 - Les Core Web Vitals constituent un signal parmi d'autres dans l'évaluation de l'expérience de page. Une bonne performance technique ne compense pas nécessairement un contenu moins pertinent ou moins utile.
 - PageSpeed Insights permet d'obtenir des données de terrain et de laboratoire pour une URL. Le rapport « Signaux Web essentiels » de Google Search Console permet quant à lui de suivre les performances des groupes de pages du site à partir des données disponibles.
 
+- ## Données structurées
+
+Les données structurées sont un format de balisage qui permet de décrire explicitement le contenu d'une page dans un vocabulaire standardisé, généralement celui de Schema.org. Elles aident les moteurs de recherche à comprendre la nature et les propriétés d'un contenu (un article, une recette, un produit, un événement...), au-delà de ce que le texte seul permet de déduire.
+
+Points clés :
+- JSON-LD est le format recommandé par Google pour implémenter les données structurées. Il s'insère dans le `<head>` ou le `<body>` sous forme de script indépendant, sans modifier la structure HTML visible de la page. Les formats Microdata et RDFa restent pris en charge.
+- Les données structurées ne garantissent pas l'apparition d'un résultat enrichi (rich result) dans les résultats de recherche : elles peuvent rendre une page éligible, mais Google décide au cas par cas de les afficher ou non.
+- Chaque type de résultat enrichi (avis, recette, événement, offre d'emploi, etc.) possède ses propres exigences de balisage, documentées par Google. Un balisage incomplet ou non conforme peut empêcher l'obtention du résultat enrichi correspondant.
+- Le balisage doit refléter fidèlement le contenu réellement présent sur la page et accessible à l'utilisateur. Utiliser des données structurées trompeuses ou sans rapport avec le contenu visible peut entraîner une non-éligibilité aux résultats enrichis.
+- L'outil de test des résultats enrichis permet de vérifier si une page peut être éligible à certains résultats enrichis. Google Search Console propose également des rapports permettant de suivre les données structurées détectées et certaines erreurs sur le site.
+- Des types comme `Organization`, `WebSite` ou `BreadcrumbList` permettent de décrire des entités et la structure du site. Leur présence ne garantit pas un meilleur classement, mais fournit aux moteurs des informations structurées supplémentaires sur le contenu et l'organisation du site.
+
