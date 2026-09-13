@@ -47,3 +47,14 @@ Points clés :
 - La réputation et l'autorité perçue d'une source sont régulièrement évoquées comme des facteurs pouvant contribuer à la confiance accordée à un contenu. Toutefois, les mécanismes précis de sélection et de pondération de ces signaux ne sont pas publiquement détaillés par la plupart des systèmes.
 - La cohérence des informations concernant une même entité — nom, activité, coordonnées et autres informations publiées sur différents sites — peut faciliter leur rapprochement et réduire les risques d'informations contradictoires.
 - Cette visibilité reste difficile à mesurer de façon standardisée : contrairement au classement dans un moteur de recherche, il n'existe pas encore de mesure universelle permettant d'observer la fréquence ou la manière dont un contenu est cité par les différents systèmes génératifs.
+
+- ## SEO classique vs visibilité IA
+
+Le SEO traditionnel et la visibilité dans les systèmes d'IA génératifs reposent sur des logiques différentes, même s'ils partagent des fondations communes : accessibilité, qualité du contenu et cohérence des informations. Il est utile de distinguer clairement les notions employées dans chaque contexte pour éviter les confusions.
+
+Points clés :
+- L'indexation — le fait qu'une page soit enregistrée dans l'index d'un moteur de recherche — et la citation — le fait qu'un contenu soit repris ou mentionné dans une réponse générée par une IA — correspondent à des mécanismes distincts. Une page peut être indexée sans jamais être citée. À l'inverse, certains systèmes peuvent accéder directement à des contenus du Web sans que ceux-ci soient nécessairement indexés par un moteur de recherche classique.
+- Le positionnement dans une page de résultats — classement parmi une liste de résultats — et la mention dans une réponse générée ne se mesurent pas de la même façon. Le premier peut être suivi avec des outils établis comme Google Search Console ou des outils de suivi de position, tandis que le second reste plus difficile à observer de façon systématique.
+- Un clic vers un site depuis une page de résultats classique reste généralement mesurable avec les outils d'analyse habituels. Une information reprise ou reformulée dans une réponse générée, avec ou sans citation, ne génère pas nécessairement de visite mesurable sur le site source.
+- Un moteur de recherche traditionnel renvoie principalement vers des documents existants, tandis qu'un système de réponse peut produire une synthèse à partir de plusieurs sources. La relation entre l'utilisateur, la réponse et les contenus originaux s'en trouve modifiée.
+- Ces différences ne signifient pas que le SEO traditionnel devient inutile. L'exploration, l'accessibilité et la compréhension du contenu restent des fondations importantes pour sa découverte par différents systèmes, y compris certains systèmes d'IA.
