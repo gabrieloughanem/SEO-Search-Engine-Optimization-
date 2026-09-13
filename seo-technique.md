@@ -82,3 +82,15 @@ Points clés :
 - L'attribut `alt` d'une image fournit une description textuelle utile aux technologies d'assistance et aide également les moteurs à comprendre le contenu de l'image, notamment pour la recherche d'images.
 - L'attribut `lang` (par exemple `<html lang="fr">`) indique la langue du document et améliore notamment son interprétation par les technologies d'assistance. Il fournit également un signal sur la langue du contenu, mais ne constitue pas à lui seul un mécanisme de ciblage international.
 - Le contenu masqué ou rendu difficilement accessible à l'utilisateur doit être utilisé avec cohérence. Cacher du contenu dans le seul but de manipuler les moteurs de recherche peut être considéré comme une pratique abusive, tandis que certains contenus masqués pour des raisons d'interface ou d'accessibilité restent parfaitement légitimes.
+
+- ## Pagination et gestion des paramètres d'URL
+
+De nombreux sites génèrent des variantes d'une même page via des paramètres d'URL (tri, filtres, suivi de campagne) ou via une pagination (listes de résultats réparties sur plusieurs pages). Ces mécanismes peuvent créer un grand nombre d'URLs proches ou dupliquées s'ils ne sont pas gérés avec attention.
+
+Points clés :
+- Les paramètres d'URL utilisés pour le tri ou le filtrage (par exemple `?tri=prix`) peuvent générer des variantes très proches de la page d'origine. Selon leur utilité et leur contenu, ces URLs peuvent être indexées séparément, canonisées vers une autre URL ou rendues moins accessibles au crawl.
+- Les paramètres de suivi comme `?utm_source=...` n'apportent généralement aucune valeur propre en matière de recherche. Une URL canonique sans paramètre peut indiquer la version de référence, tout en conservant les paramètres nécessaires au suivi des campagnes.
+- Pour une série de pages paginées (page 1, 2, 3...), chaque page peut être explorée et indexée individuellement lorsqu'elle possède un contenu propre et une valeur suffisante. Google ne prend plus en charge les signaux `rel="next"` et `rel="prev"` pour l'indexation.
+- Une page uniquement accessible après plusieurs niveaux de pagination peut être plus difficile à découvrir si elle n'est pas suffisamment reliée par des liens internes. La pagination doit donc permettre aux moteurs d'atteindre les pages importantes par des liens HTML accessibles.
+- `robots.txt` peut limiter l'exploration de certaines variantes d'URL, mais il doit être utilisé avec prudence : bloquer une URL empêche principalement son exploration et ne constitue pas une méthode fiable pour empêcher son indexation.
+- Google Search Console ne propose plus le traitement général des paramètres d'URL qui permettait auparavant de déclarer leur comportement. La gestion doit donc principalement reposer sur l'architecture du site, les liens internes, la canonicalisation et, lorsque c'est pertinent, les règles de crawl.
