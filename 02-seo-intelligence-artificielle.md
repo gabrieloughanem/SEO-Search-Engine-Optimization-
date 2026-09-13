@@ -9,7 +9,7 @@ Cette évolution modifie la manière dont l'information peut être découverte e
 Points clés :
 - Un moteur de recherche classique et un système de réponse générative ne présentent pas nécessairement l'information de la même manière : le premier renvoie principalement vers des résultats, tandis que le second peut synthétiser des informations avant de formuler une réponse.
 - Certains systèmes d'IA peuvent utiliser des informations provenant du Web au moment de générer une réponse, tandis que d'autres peuvent également s'appuyer sur des données issues de leur entraînement ou sur d'autres sources. Le fonctionnement exact dépend du système utilisé.
-- La possibilité pour un contenu d'être découvert par un système d'IA dépend notamment de son accessibilité et des mécanismes d'exploration ou de récupération utilisés par le service concerné.
+- La possibilité pour un contenu d'être découvert par un système d'IA dépend notamment de son accessibilité et des mécanismes d'exploration ou de récupération utilisés par le service concerné. Certains services disposent de robots d'exploration spécifiques, tandis que d'autres fonctionnalités peuvent s'appuyer sur des index ou des systèmes de récupération distincts.
 - Une page indexée par un moteur de recherche n'est pas automatiquement citée dans une réponse générée par une IA. L'indexation et la citation correspondent à des mécanismes différents.
 - Lorsqu'un système fournit des citations, celles-ci permettent à l'utilisateur de vérifier ou d'approfondir l'information auprès des sources mentionnées. La présence d'une citation ne constitue toutefois pas une garantie que le contenu cité soit exhaustif ou parfaitement interprété.
 - Les mécanismes précis permettant à un système génératif de sélectionner, pondérer ou citer une source ne sont pas toujours documentés publiquement. Il convient donc de distinguer les informations officiellement documentées des observations empiriques et des hypothèses formulées par l'industrie SEO.
@@ -36,7 +36,7 @@ Points clés :
 - La production automatisée de nombreuses pages à partir de modèles, de prompts ou de structures similaires peut également conduire à des contenus répétitifs ou peu différenciés. Le problème ne vient pas nécessairement de l'automatisation elle-même, mais de l'absence de valeur ajoutée réelle.
 - Les principes de qualité applicables au contenu restent valables quelle que soit sa méthode de production : expérience, expertise, autorité, fiabilité, exactitude et adéquation avec l'intention de l'utilisateur doivent être prises en compte lors de la conception du contenu.
 
-- ## Visibilité dans les systèmes d'IA
+## Visibilité dans les systèmes d'IA
 
 Au-delà du classement dans les résultats de recherche traditionnels, un contenu peut aussi être repris, résumé ou cité par un système d'intelligence artificielle. Cette visibilité dépend de plusieurs facteurs, dont certains recoupent les fondamentaux du SEO technique et d'autres restent propres à chaque système.
 
@@ -46,9 +46,9 @@ Points clés :
 - Les données structurées et une organisation claire du contenu — titres, structure logique, informations factuelles bien délimitées — peuvent faciliter l'extraction et la compréhension du contenu par un système automatisé, sans garantir pour autant sa citation.
 - La réputation et l'autorité perçue d'une source sont régulièrement évoquées comme des facteurs pouvant contribuer à la confiance accordée à un contenu. Toutefois, les mécanismes précis de sélection et de pondération de ces signaux ne sont pas publiquement détaillés par la plupart des systèmes.
 - La cohérence des informations concernant une même entité — nom, activité, coordonnées et autres informations publiées sur différents sites — peut faciliter leur rapprochement et réduire les risques d'informations contradictoires.
-- Cette visibilité reste difficile à mesurer de façon standardisée : contrairement au classement dans un moteur de recherche, il n'existe pas encore de mesure universelle permettant d'observer la fréquence ou la manière dont un contenu est cité par les différents systèmes génératifs.
+- Cette visibilité reste difficile à mesurer de façon standardisée entre les différents systèmes. Google propose désormais des données spécifiques dans Search Console pour certaines fonctionnalités génératives de sa propre recherche, mais il n'existe pas encore de mesure universelle permettant de comparer la visibilité d'un contenu entre les différents systèmes génératifs.
 
-- ## SEO classique vs visibilité IA
+## SEO classique vs visibilité IA
 
 Le SEO traditionnel et la visibilité dans les systèmes d'IA génératifs reposent sur des logiques différentes, même s'ils partagent des fondations communes : accessibilité, qualité du contenu et cohérence des informations. Il est utile de distinguer clairement les notions employées dans chaque contexte pour éviter les confusions.
 
@@ -59,7 +59,7 @@ Points clés :
 - Un moteur de recherche traditionnel renvoie principalement vers des documents existants, tandis qu'un système de réponse peut produire une synthèse à partir de plusieurs sources. La relation entre l'utilisateur, la réponse et les contenus originaux s'en trouve modifiée.
 - Ces différences ne signifient pas que le SEO traditionnel devient inutile. L'exploration, l'accessibilité et la compréhension du contenu restent des fondations importantes pour sa découverte par différents systèmes, y compris certains systèmes d'IA.
 
-- ## Bonnes pratiques
+## Bonnes pratiques
 
 Sans garantir une visibilité dans les systèmes d'IA, certaines pratiques cohérentes avec les fondamentaux du SEO technique et de la qualité du contenu peuvent faciliter la découverte, l'extraction et la compréhension d'une information par des systèmes automatisés.
 
@@ -71,7 +71,7 @@ Points clés :
 - Maintenir une identité et des informations d'entité cohérentes — nom, activité, coordonnées et autres informations pertinentes — sur les différents supports où l'entité est présente, afin de réduire les risques de confusion ou de contradiction entre les sources.
 - Mettre à jour le contenu lorsque les informations qu'il contient évoluent, plutôt que de laisser des pages obsolètes en ligne. Une date de publication ou de mise à jour correctement renseignée peut également aider à contextualiser la fraîcheur d'une information, sans garantir un meilleur classement ou une meilleure visibilité.
 
-- ## Limites et incertitudes
+## Limites et incertitudes
 
 Une grande partie de ce qui est écrit sur la visibilité dans les systèmes d'IA repose sur des observations, des tests empiriques et des hypothèses formulées par la communauté SEO, plutôt que sur une documentation officielle exhaustive de la part des fournisseurs de ces systèmes.
 
@@ -81,3 +81,21 @@ Points clés :
 - Les modèles et les systèmes évoluent rapidement, avec des mises à jour fréquentes et parfois peu détaillées publiquement. Une observation réalisée à un instant donné peut donc ne plus être valable quelques mois plus tard.
 - Il convient de distinguer explicitement ce qui relève de la documentation officielle publiée par un fournisseur — Google, OpenAI, Perplexity, etc. — de ce qui relève d'observations empiriques, de tests limités ou non reproduits à grande échelle, ou d'hypothèses formulées dans l'industrie du référencement.
 - Le vocabulaire employé autour de ces sujets — GEO, AEO et d'autres termes susceptibles d'apparaître — évolue lui-même rapidement et ne fait pas toujours l'objet d'un consensus de définition, y compris au sein de la communauté qui les utilise.
+
+## Sources
+
+Documentation officielle :
+- [Google Search Central — Optimiser votre site Web pour les fonctionnalités d'IA générative dans la recherche Google](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide)
+- [Google Search Central — Fonctionnalités d'IA et votre site Web](https://developers.google.com/search/docs/appearance/ai-features)
+- [Google Search Central — Conseils concernant le contenu généré par IA](https://developers.google.com/search/docs/fundamentals/using-gen-ai-content)
+- [Google Search Central — Créer du contenu utile, fiable et axé sur les utilisateurs](https://developers.google.com/search/docs/fundamentals/creating-helpful-content)
+- Google Search Console — Rapport de performance des fonctionnalités d'IA générative
+- [Google Search Essentials](https://developers.google.com/search/docs/essentials)
+- [OpenAI — Overview of OpenAI Crawlers](https://developers.openai.com/api/docs/bots)
+- [Perplexity — Comment Perplexity respecte robots.txt](https://www.perplexity.ai/help-center/en/articles/10354969-how-does-perplexity-follow-robots-txt)
+
+À propos des observations et hypothèses :
+
+Les mécanismes internes de sélection, de récupération, de pondération et de citation des sources peuvent varier selon les systèmes et ne sont pas nécessairement documentés publiquement dans leur intégralité.
+
+Lorsqu'une affirmation repose sur une observation expérimentale, une analyse ou une hypothèse plutôt que sur une documentation officielle, elle doit être considérée comme telle et ne constitue pas une règle universelle applicable à l'ensemble des systèmes d'IA.
