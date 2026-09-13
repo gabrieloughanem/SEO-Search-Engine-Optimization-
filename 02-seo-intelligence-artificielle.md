@@ -58,3 +58,17 @@ Points clés :
 - Un clic vers un site depuis une page de résultats classique reste généralement mesurable avec les outils d'analyse habituels. Une information reprise ou reformulée dans une réponse générée, avec ou sans citation, ne génère pas nécessairement de visite mesurable sur le site source.
 - Un moteur de recherche traditionnel renvoie principalement vers des documents existants, tandis qu'un système de réponse peut produire une synthèse à partir de plusieurs sources. La relation entre l'utilisateur, la réponse et les contenus originaux s'en trouve modifiée.
 - Ces différences ne signifient pas que le SEO traditionnel devient inutile. L'exploration, l'accessibilité et la compréhension du contenu restent des fondations importantes pour sa découverte par différents systèmes, y compris certains systèmes d'IA.
+
+- ## Bonnes pratiques
+
+Sans garantir une visibilité dans les systèmes d'IA, certaines pratiques cohérentes avec les fondamentaux du SEO technique et de la qualité du contenu peuvent faciliter la découverte, l'extraction et la compréhension d'une information par des systèmes automatisés.
+
+Points clés :
+- Rendre le contenu techniquement accessible : éviter les blocages involontaires à l'exploration, s'assurer que l'information essentielle est présente dans le HTML ou correctement rendue, et maintenir des temps de réponse raisonnables.
+- Fournir des informations vérifiables et à jour, en particulier lorsqu'il s'agit de faits, de chiffres ou de données susceptibles d'être repris dans une réponse. Une information obsolète peut réduire la pertinence d'un contenu pour un système cherchant à produire une réponse actualisée.
+- Structurer le contenu de façon claire, avec une hiérarchie de titres logique et des sections bien délimitées, afin de faciliter l'identification et l'extraction d'informations précises.
+- Utiliser des données structurées cohérentes avec le contenu réel de la page, sans chercher à créer un balisage trompeur dans l'espoir d'obtenir une meilleure visibilité ou une citation.
+- Maintenir une identité et des informations d'entité cohérentes — nom, activité, coordonnées et autres informations pertinentes — sur les différents supports où l'entité est présente, afin de réduire les risques de confusion ou de contradiction entre les sources.
+- Mettre à jour le contenu lorsque les informations qu'il contient évoluent, plutôt que de laisser des pages obsolètes en ligne. Une date de publication ou de mise à jour correctement renseignée peut également aider à contextualiser la fraîcheur d'une information, sans garantir un meilleur classement ou une meilleure visibilité.
+
+- 
