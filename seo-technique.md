@@ -94,3 +94,16 @@ Points clés :
 - Une page uniquement accessible après plusieurs niveaux de pagination peut être plus difficile à découvrir si elle n'est pas suffisamment reliée par des liens internes. La pagination doit donc permettre aux moteurs d'atteindre les pages importantes par des liens HTML accessibles.
 - `robots.txt` peut limiter l'exploration de certaines variantes d'URL, mais il doit être utilisé avec prudence : bloquer une URL empêche principalement son exploration et ne constitue pas une méthode fiable pour empêcher son indexation.
 - Google Search Console ne propose plus le traitement général des paramètres d'URL qui permettait auparavant de déclarer leur comportement. La gestion doit donc principalement reposer sur l'architecture du site, les liens internes, la canonicalisation et, lorsque c'est pertinent, les règles de crawl.
+
+- ## Internationalisation (hreflang)
+
+Certains sites proposent des versions d'une même page adaptées à différentes langues ou zones géographiques. L'attribut `hreflang` permet d'indiquer aux moteurs de recherche les relations entre ces différentes versions et de signaler quelle version linguistique ou régionale est destinée à quel public.
+
+Points clés :
+- `hreflang` se déclare soit dans les balises `<link>` du `<head>` de chaque page, soit dans le sitemap XML, soit via l'en-tête HTTP `Link` (utile notamment pour les fichiers non HTML comme les PDF).
+- Chaque page d'un ensemble de versions linguistiques doit référencer les autres versions, y compris elle-même (référence dite auto-référentielle). Des annotations incomplètes ou incohérentes peuvent empêcher certaines relations d'être prises en compte.
+- Le format attendu combine un code de langue (ISO 639-1) et, optionnellement, un code de région (ISO 3166-1 Alpha 2), par exemple `fr-FR` pour le français de France ou `fr-CA` pour le français du Canada.
+- La valeur spéciale `x-default` permet de désigner la version à utiliser lorsqu'aucune autre version linguistique ou régionale ne correspond.
+- `hreflang` est un signal indiquant une relation entre des pages équivalentes, mais ne garantit pas à lui seul leur classement dans chaque marché. Il doit correspondre à des versions réellement adaptées à chaque langue ou région.
+- Des annotations `hreflang` incohérentes, par exemple lorsqu'une page A référence B sans que B ne référence A, peuvent empêcher Google de reconnaître correctement la relation entre les deux versions.
+
